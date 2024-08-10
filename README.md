@@ -79,4 +79,4 @@ Replace instances of the SiLU activation function with LeakyReLU.
 ![image](yolov5predDPU.png)
 ## Acknowledgments
 
-- List any resources, libraries, or contributors you wish to acknowledge.
+- my brain
