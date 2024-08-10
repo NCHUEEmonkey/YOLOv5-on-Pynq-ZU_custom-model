@@ -46,11 +46,10 @@ YOLOv5 is a state-of-the-art object detection model, and this project demonstrat
 3. **Set Up the Environment:** Ensure all dependencies are installed and the environment is configured.
 
 ## Model Preparation
-
-1. **Convert YOLOv5 to ONNX:**
-    - Follow the steps in the `models/README.md` to convert the YOLOv5 model to the ONNX format.
-2. **Quantize the Model:**
-    - Use the Vitis AI quantizer to convert the ONNX model to a quantized version compatible with the FPGA.
+very important
+1. Modify the Activation Function
+Locate the activation functions in the YOLOv5 codebase. These are typically defined in the models/common.py file, where the SiLU function is used.
+Replace instances of the SiLU activation function with LeakyReLU. 
 
 ## Deployment
 
