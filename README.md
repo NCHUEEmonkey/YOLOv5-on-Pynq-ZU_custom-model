@@ -29,10 +29,9 @@ YOLOv5 is a state-of-the-art object detection model, and this project demonstrat
 ## Requirements
 
 - Pynq-ZU FPGA Board
-- Vitis AI 1.4 or later
+- Vitis AI 3.5 or later
 - Python 3.7 or later
 - PyTorch for model conversion
-- ONNX for intermediate model representation
 - Xilinx's tools for compilation
 
 ## Setup
@@ -49,8 +48,11 @@ YOLOv5 is a state-of-the-art object detection model, and this project demonstrat
 very important
 1. Modify the Activation Function
 Locate the activation functions in the YOLOv5 codebase. These are typically defined in the models/common.py file, where the SiLU function is used.
-Replace instances of the SiLU activation function with LeakyReLU. 
+Replace instances of the SiLU activation function with LeakyReLU.
 
+![image](vitisaixmodel.png)
+---------------------------
+![image](DPUmodel.png)
 ## Deployment
 
 1. **Compile the Model:**
@@ -74,8 +76,7 @@ Replace instances of the SiLU activation function with LeakyReLU.
 
 ## Results
 
-- Provide benchmarks and results of the deployment, including inference time, accuracy, and power consumption.
-![image](vitisaixmodel.png)
+- inference time, accuracy, and power consumption.
 ![image](yolov5predDPU.png)
 ## Acknowledgments
 
